@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercicio 2 </title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+   var a, b, c, delta, raizes, x1, x2
+
+   a = Number.parseFloat(prompt("Digite o coeficiente A"));
+   b = Number.parseFloat(prompt("Digite o coeficiente B"));
+   c = Number.parseFloat(prompt("Digite o coeficiente C"));
+
+   delta = b * b - 4 * a * c;
+
+   if (delta < 0) {
+      alert("A equação precisa de raizes reais")
+   }
+
+    else{
+
+      x1 = (-b + Math.sqrt(delta)) / (2 * a)
+      x2 = (-b - Math.sqrt(delta)) / (2 * a)
+
+      alert(`x1 = ${x1.toFixed(4)} / x2 = ${x2.toFixed(4)}`)
+    }
+
+
+
+</script>

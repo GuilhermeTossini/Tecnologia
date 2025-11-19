@@ -1,1 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+   
+    
+        background-color: #66C5CC; /* Azul/Verde Água - Calma e Higiene */
+            --color-secondary: #6B8E23; /* Verde Folha - Natureza e Cura */
+            --color-background: #F5F5DC; /* Bege Claro - Conforto */
+            --color-danger: #ef4444; /* Vermelho padrão para erros */
+}
+
+img{
+   width: 150px
+    
+
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between; 
+    background-color: #F5F5DC;
+}
+
+.icone img{
+    width: 20px;
+}
+
+.icone2 img{
+    width: 40px;
+
+}
+
+.servicos{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    
+    
+    
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
 

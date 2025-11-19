@@ -13,23 +13,44 @@ body{
             --color-secondary: #6B8E23; /* Verde Folha - Natureza e Cura */
             --color-background: #F5F5DC; /* Bege Claro - Conforto */
             --color-danger: #ef4444; /* Vermelho padrão para erros */
+            font-family: 'inter', sans-serif;
+    
+   
 }
 
-img{
-   width: 150px
+iframe{
+    border-radius: 15px;
+}
+
+.imagens img{
+   width: 150px;
+   height: 200px;
+   border-radius: 15px;
+   margin: 20px;
     
 
 }
+main{
 
+   
+    padding: 30px;
+    margin: 40px;
+    border-radius: 20px;
+    background-color: white;
+    
+}
 header{
 
     display: flex;
     justify-content: space-between; 
     background-color: #F5F5DC;
+    border-radius: 10px;
+    color: #26B7B8
 }
 
 .icone img{
     width: 20px;
+    gap: 30px;
 }
 
 .icone2 img{
@@ -43,6 +64,7 @@ header{
     align-content: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
     
     
     
@@ -55,5 +77,9 @@ header{
     
 }
 
+.senacicon img{
 
-
+    width: 60px;
+    border-radius: 60px;
+    gap: 15px;
+}

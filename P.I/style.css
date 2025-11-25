@@ -14,7 +14,8 @@ body{
             --color-background: #F5F5DC; /* Bege Claro - Conforto */
             --color-danger: #ef4444; /* Vermelho padrão para erros */
             font-family: 'inter', sans-serif;
-    
+            background-image: url(../P.I/img/Curso\ de\ podologia\ no\ RJ_\ matricule-se\ no\ Instituto\ Valéria\ Vaz.png);
+        background-size: cover;
    
 }
 
@@ -36,7 +37,8 @@ main{
     padding: 30px;
     margin: 40px;
     border-radius: 20px;
-    background-color: white;
+    background-color: white ;
+    
     
 }
 header{
@@ -44,19 +46,35 @@ header{
     display: flex;
     justify-content: space-between; 
     background-color: #F5F5DC;
-    border-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: sticky;
     color: #26B7B8
 }
 
-.icone img{
-    width: 20px;
-    gap: 30px;
+
+
+.icone  {
+    display: flex;
+    flex-direction: column;
+    
+    
+    align-items: center;
+    position: fixed;
+    
+    top: 80vh;
+    right: 0px;
+    opacity: 
+    80%;
+    height: 110px;
 }
 
-.icone2 img{
-    width: 40px;
-
+.iconeimg img{
+    width: 42px;
+    display: flex;
+    
 }
+
 
 .servicos{
     display: flex;
@@ -66,6 +84,8 @@ header{
     flex-direction: column;
     padding: 15px;
     
+   
+    
     
     
     
@@ -74,6 +94,24 @@ header{
 .imagens{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.fundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fundo img{  
+
+    width: 100%;
+    border-radius: 30px;
+    height: 700px;
+    
+    
+    
     
 }
 
@@ -83,3 +121,53 @@ header{
     border-radius: 60px;
     gap: 15px;
 }
+
+
+cta-section {
+    
+    text-align: center;
+    background-color: #003399;
+    color: #fff;
+    padding: 30px 20px;
+}
+ 
+.cta-section h3 {
+    color: #000000;
+    font-size: 1.6em;
+}
+
+.btn-agendamento {
+    display: inline-block;
+    background-color: #003399; /*  botão */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+ 
+.btn-agendamento:hover {
+    background-color: #FF5000; /*  mais claro no hover */
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: #003399;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid rgb(248, 247, 247);
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    color: #003399;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+    
+}
+ 

@@ -55,9 +55,101 @@
     <main>
         <section>
             <article>
-                <div class="fundo">
-                    <img src="/img/Curso de podologia no RJ_ matricule-se no Instituto Valéria Vaz.png">
-                </div>
+                <!-- CARROSSEL -->
+<section id="carrossel" class="carousel-container reveal">
+ 
+    <div class="carousel">
+        <button class="prev">&#10094;</button>
+ 
+        <div class="carousel-wrapper">
+ 
+            <div class="slide active">
+                <img src="/img/foot-care-3557103_1280.jpg"  alt="Imagem 1">
+                <p class="caption">Cuidado especializado para seus pés</p>
+            </div>
+ 
+            <div class="slide">
+                <img src="/img/senacpodog.jpeg" alt="Imagem 2">
+                <p class="caption">Massagem relaxante e terapêutica</p>
+            </div>
+ 
+            <div class="slide">
+                <img src="/img/pé.jpg" alt="Imagem 3">
+                <p class="caption">Procedimentos podológicos profissionais</p>
+            </div>
+ 
+            <div class="slide">
+                <img src="/img/feet-6762751_1280.jpg" alt="Imagem 4">
+                <p class="caption">Estética e saúde dos pés</p>
+            </div>
+ 
+            <div class="slide">
+                <img src="/img/Curso de podologia no RJ_ matricule-se no Instituto Valéria Vaz.png" alt="Imagem 5">
+                <p class="caption">Atendimento confortável e seguro</p>
+            </div>
+ 
+        </div>
+ 
+        <button class="next">&#10095;</button>
+    </div>
+ 
+    <div class="carousel-dots"></div>
+    <script>
+/*  CARROSSEL   */
+ 
+const slides = document.querySelectorAll(".slide");
+const nextBtn = document.querySelector(".next");
+const prevBtn = document.querySelector(".prev");
+const dotsContainer = document.querySelector(".carousel-dots");
+ 
+let index = 0
+ 
+/* Criar bolinhas */
+slides.forEach((_, i) => {
+    const dot = document.createElement("span");
+    dot.addEventListener("click", () => goToSlide(i));
+    dotsContainer.appendChild(dot)
+});
+ 
+const dots = document.querySelectorAll(".carousel-dots span");
+ 
+function showSlide(i) {
+    slides.forEach(slide => slide.classList.remove("active"));
+    dots.forEach(dot => dot.classList.remove("active"));
+ 
+    slides[i].classList.add("active")
+    dots[i].classList.add("active")
+}
+ 
+function goToSlide(i) {
+    index = i;
+    showSlide(index);
+}
+ 
+/* Botões */
+prevBtn.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length
+    showSlide(index);
+});
+ 
+nextBtn.addEventListener("click", () => {
+    index = (index + 1) % slides.length
+    showSlide(index);
+});
+ 
+/* Automático */
+setInterval(() => {
+    index = (index + 1) % slides.length
+    showSlide(index)
+}, 5000)
+ 
+/* Iniciar */
+showSlide(index)
+ 
+ 
+</script>
+ 
+</section>
                 <div class="">
                     <h2>Seja Modelo no Curso de Podologia do Senac! </h2>
 

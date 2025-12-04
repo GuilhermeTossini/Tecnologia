@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    let preco = parseFloat(prompt("Digite o preço do produto"));
+    let quantidade = parseFloat(prompt("Agora a quantidade que deseja "));
+    let pagamento = parseFloat(prompt("O total a pagar"))
+
+    let total = preço * quantidade
+
+    if(quantidade >= total){
+        let troco = quantidade -total
+        alert(`troco = R$` + troco.toFixed(2))
+    }
+
+    else{
+        let faltante = total - quantidade
+    }
+
+    alert(`Dinheiro faltando. falta em R$` + faltante. toFixed(2))
+
+
+</script>

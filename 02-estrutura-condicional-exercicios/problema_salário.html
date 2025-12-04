@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 11</title>
+</head>
+
+<body>
+
+    <script>
+let salario = parseFloat(prompt('Digite seu salario'))
+let percentual
+let aumento
+let salnovo
+
+        if (salario <= 1000){
+            percentual = 20
+        }
+        else if(salario <= 3000){
+        percentual = 15
+        }
+        else if(salario <= 8000){
+            percentual = 10
+        }
+
+        else{
+            percentual = 5
+        }
+
+        aumento = salario * (percentual / 100)
+        salnovo = salario + aumento
+
+        alert(
+            "O salario antigo R$ : " + salario.toFixed(2) + "percentual do aumento" + percentual + "% " + "aumento em R$ " + aumento.toFixed(2) + "salario novo em R$ " + salnovo.toFixed(2)
+        )
+
+    </script>
+
+</body>
+
+</html>

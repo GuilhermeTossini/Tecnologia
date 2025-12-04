@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carousel">
+  <button class="prev">&#10094;</button>
+
+  <div class="carousel-images">
+    <img src="/img/feet-6762751_1280.jpg" class="active">
+    <img src="/img/Curso de podologia no RJ_ matricule-se no Instituto Valéria Vaz.png">
+    <img src="/img/senac-logo-png_seeklogo-124782.png">
+  </div>
+
+  <button class="next">&#10095;</button>
+</div>
+
+<style>
+    .carousel {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.carousel-images img.active {
+  display: block;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+</style>
+
+<script>
+    const images = document.querySelectorAll(".carousel-images img");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+let index = 0;
+
+function showImage(i) {
+  images.forEach(img => img.classList.remove("active"));
+  images[i].classList.add("active");
+}
+
+nextBtn.addEventListener("click", () => {
+  index = (index + 1) % images.length;
+  showImage(index);
+});
+
+prevBtn.addEventListener("click", () => {
+  index = (index - 1 + images.length) % images.length;
+  showImage(index);
+});
+
+</script>
+
+
+</body>
+</html>

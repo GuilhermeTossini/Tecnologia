@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    /*6) Fazer um programa para ler a quantidade de glicose no sangue de uma pessoa e depois mostrar na tela a classificação desta glicose de acordo com a tabela de referência ao lado.
+
+Classificação Glicose
+
+Normal Até 100 mg/dl
+
+Elevado Maior que 100 até 140 mg/dl
+
+Diabetes Maior de 140 mg/dl
+
+a. Exemplo 1:
+
+i. Digite a medida da glicose: 90.0
+
+ii. Classificação: normal
+
+b. Exemplo 2:
+
+i. Digite a medida da glicose: 140.0
+
+ii. Classificação: elevado
+
+c. Exemplo 3:
+
+i. Digite a medida da glicose: 143.2
+
+ii. Classificação: diabetes
+*/
+    let glicose = parseFloat(prompt("Digite a medida da glicose: "));
+
+    if (glicose <= 100){
+        alert("classificação: normal")
+    }
+    else if (glicose > 100 && glicose <= 140){
+        alert("classificação: elevado")
+
+    }
+    else{
+        alert("classificação: diabetes")
+    }
+
+
+</script>

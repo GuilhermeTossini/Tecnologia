@@ -83,6 +83,7 @@ menu a {
     margin: 40px;
     border-radius: 20px;
     background-color: #F5F5DC
+
 }
 
 .vem {
@@ -91,24 +92,25 @@ menu a {
     margin: 40px;
     border-radius: 20px;
     background-color: #F5F5DC
-}
 
-.vem:hover {
-    transform: translateY(-25px);
+
+}
+.vem:hover{
+        transform: translateY(-25px);
 
     opacity: 1;
     transition: 1s;
 }
 
-.vem1:hover {
-    transform: translateY(-25px);
+.vem1:hover{
+        transform: translateY(-25px);
 
     opacity: 1;
     transition: 1s;
 }
 
-.vem2:hover {
-    transform: translateY(-25px);
+.vem2:hover{
+        transform: translateY(-25px);
 
     opacity: 1;
     transition: 1s;
@@ -119,6 +121,7 @@ menu a {
     margin: 40px;
     border-radius: 20px;
     background-color: #F5F5DC
+
 }
 
 
